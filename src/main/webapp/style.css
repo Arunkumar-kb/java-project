@@ -1,0 +1,243 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Monoton&family=Poppins:wght@200;300;400;500&family=Vibur&display=swap');
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Style the navbar */
+.nav-bar{
+	background-color: #2C50DD;
+	color : white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 30px;
+}
+/* Style the logo */
+.logo{
+	font-size : 24px;
+	font-weight : 500;
+	text-transform : uppercase;
+	letter-spacing : 2px;
+}
+/* Style the links */
+.nav-links{
+	list-style: none;
+	display : flex;
+}
+.nav-links li{
+	margin-left : 10px;
+}
+.nav-links a{
+	color : white;
+	text-decoration : none;
+	font-size : 18px;
+	padding : 8px 16px;
+	transition : background-color .3s ease; 
+}
+.nav-links a:hover{
+	background-color : white;
+	color : black;
+	border-radius : 4px;
+}
+/* login design */
+.container{
+	height : 90vh;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+}
+.sign-in,.signup{
+	padding : 20px;
+	border : 0px solid #ccc;
+	border-radius : 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+	row-gap: 15px;
+}
+
+/* sign-in size */
+.sign-in .i-filed {
+    display: flex;
+    justify-content: space-between;
+    width: 388px;
+    margin: 15px 0px;
+}
+
+.i-filed{
+	display:flex;
+	align-items : center;
+	justify-content : space-between;
+	width : 480px;
+}
+.i-filed label{
+	text-transform : capitalize;
+	font-size : 18px;
+}
+.i-filed input,#dept{
+	border : 1px solid #ccc;
+	width : 240px;
+	height : 25px;
+	padding : 2px 8px;
+	border-radius : 5px;
+}
+.i-filed .radio{
+	width: 240px;
+	display : flex;
+	justify-content : space-between;
+	align-items : center;
+	padding : 4px;
+}
+.i-filed input[type=radio]{
+	border : 1px solid #ccc;
+	width : 20px;
+	border-radius : 5px;
+}
+.sign-in .i-filed select{
+	width : 100%;
+	padding : 3px 6px;
+	border-radius: 5px;
+	font-size : 18px;
+	cursor : pointer;
+}
+.title h3{
+	font-weight : 500;
+	text-transform : uppercase;
+	letter-spacing : 2px;
+	padding : 5px 0;
+}
+.btn{
+	padding : 10px 0;
+	width : 100%;
+}
+.btn input{
+	width: 100%;
+	align-items : center;
+	padding : 12px 0;
+	border : none;
+	text-transform : capitalize;
+	font-size : 20px;
+	border-radius : 25px;
+	transition : background-color .4s ease;
+}
+.btn input:hover{
+	background-color : #2C50DD;
+	color : white;
+}
+.msg{
+	text-align: center;
+}
+/* profile design */
+.profile{
+	width : 650px;
+	border-radius :15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding : 20px;
+	row-gap : 10px;
+}
+.profile .heading h3{
+	text-transform : captilize;
+	font-size : 22px;
+	font-weight : 600;
+	width : 100%;
+	padding : 12px 30px;
+	letter-spacing : 1px;
+}
+.profile .p-filed{
+	display : flex;
+	align-items : center;
+	justify-content : space-between;
+	margin : 15px 0px;
+	padding : 5px 30px;
+}
+.p-filed label{
+	font-size : 20px;
+	text-transform : capitalize;
+
+}
+.p-filed input{
+	border : none;
+	font-size : 20px;
+	text-transform : captilize;
+	background : none;
+	color : black;
+}
+/* result page style */
+.t-body{
+	width : 100%;
+	height : 90vh;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+}
+.t-content{
+	width : 700px;
+	height : 400px;
+	padding : 25px;
+	display : flex;
+	flex-direction : column;
+	row-gap : 25px;
+}
+.t-title{
+	font-size : 14px;
+	font-weight : 300;
+	text-transform : uppercase;
+	letter-spacing : .5px;
+}
+.sem label{
+	font-size : 20px;
+	font-weight : 500;
+}
+.sem select{
+	margin : 0px 10px;
+	width : 150px;
+	padding : 3px 8px;
+	border-radius : 5px;
+}
+.t-data table{
+	width : 100%;
+	border-collapse: collapse;
+	font-size: 18px;
+	text-align: left;
+	text-transform : capitalize;
+}
+.t-data table td,th{
+	padding : 12px 18px;
+}
+.t-data table tr:nth-of-type(odd){
+	background-color : #f2f2f2;
+}
+.t-data table tr:nth-of-type(even){
+	background-color : #d9d9d9;
+}
+.msg{
+	color : red;
+}
+/* view student page design */
+.std-content{
+	width : 80%;
+	padding : 25px;
+	display : flex;
+	flex-direction : column;
+	row-gap : 25px;
+}
+.std-content .t-title{
+	text-align : center;
+}
+.dte{
+	padding : 5px 10px;
+	border-radius : 4px;
+	background : transparent;
+}
+.dte:hover{
+	background-color : red;
+	color : white;
+	border : white;
+	border-radius : 4px;
+}
